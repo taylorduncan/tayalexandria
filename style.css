@@ -429,3 +429,16 @@ footer h2 {
 
   font-size: .75rem;
 }
+.contact-form select {
+  width: 100%;
+  padding: 18px 22px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.05);
+  color: #f7efe7;
+  font-size: 1rem;
+}
+
+.contact-form option {
+  background: #111;
+}
