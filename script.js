@@ -1,9 +1,8 @@
 const header = document.querySelector(".site-header");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 40) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
+  header.style.background =
+    window.scrollY > 50
+      ? "rgba(5, 5, 5, 0.92)"
+      : "rgba(5, 5, 5, 0.72)";
 });
