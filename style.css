@@ -597,40 +597,51 @@ footer h2 {
     margin-bottom: 22px;
   }
 }
-/* MOBILE HERO BUTTONS */
+/* HERO BUTTONS - MOBILE */
 @media (max-width: 768px) {
-
   .hero {
     position: relative;
-    min-height: 85vh;
+    min-height: 92vh;
+    padding: 80px 24px 150px;
   }
 
   .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: relative;
+    z-index: 2;
     height: 100%;
   }
 
-  .hero-buttons,
-  .hero-cta {
+  .hero-buttons {
     position: absolute;
-    bottom: 40px;
     left: 50%;
+    bottom: 45px;
     transform: translateX(-50%);
-    width: 92%;
+    width: 90%;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
   }
 
-.hero-buttons a,
-.hero-cta a,
-.btn {
-  background: rgba(0,0,0,.25);
-  border: 1px solid #d69552;
-  color: #f5f0ea;
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: none;
+    min-height: 74px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 6px;
+    border-radius: 0;
+
+    font-size: 0.7rem;
+    letter-spacing: 1.8px;
+    line-height: 1.35;
+    text-align: center;
+
+    background: rgba(0,0,0,.35);
+    border: 1px solid #d88c4a;
+    color: #f7efe7;
   }
 }
