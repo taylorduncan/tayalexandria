@@ -542,3 +542,15 @@ footer h2 {
     object-fit: cover;
   }
 }
+.hero h1,
+.hero-title {
+    display: none;
+}
+.hero-content {
+    padding-top: 0;
+}
+
+.hero-subtitle,
+.hero p {
+    margin-top: 0;
+}
