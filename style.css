@@ -554,3 +554,46 @@ footer h2 {
 .hero p {
     margin-top: 0;
 }
+@media (max-width: 768px) {
+  .hero {
+    min-height: 82vh;
+    padding: 60px 24px 40px;
+  }
+
+  .hero-content {
+    max-width: 92%;
+    margin: 0 auto;
+    transform: translateY(-35px);
+  }
+
+  .hero-buttons,
+  .hero-cta,
+  .button-row {
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .btn,
+  .hero-buttons a,
+  .hero-cta a {
+    width: 82%;
+    max-width: 320px;
+    padding: 14px 18px;
+    font-size: 0.78rem;
+    letter-spacing: 3px;
+  }
+
+  .hero p,
+  .hero-subtitle {
+    font-size: 1.15rem;
+    line-height: 1.35;
+    margin-bottom: 18px;
+  }
+
+  .hero .eyebrow,
+  .hero-tagline {
+    font-size: 0.72rem;
+    letter-spacing: 5px;
+    margin-bottom: 22px;
+  }
+}
